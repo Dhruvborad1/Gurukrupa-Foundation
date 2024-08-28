@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/luxury-signature-initial-gf-logo-design-handwriting-vector-logo-design-illustration-image_9692-1208.jpg">
+
+    <title>Lead Listing</title>
+</head>
+<style>
+    /* General Styling */
+body {
+    background-image: url(b1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    border-bottom: solid 2px black;
+}
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #ffffff98;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 59px 14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 59px 14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 59px 14px rgba(0,0,0,0.75);
+}
+
+/* Lead Listing Page Specific Styling */
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #34cac2;
+    color: white;
+}
+
+table td {
+    background-color: #ffffffc1;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #969090;
+}
+
+table td button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+table td button.editBtn {
+    background-color: #5bc0de;
+    color: white;
+}
+
+table td button.deleteBtn {
+    background-color: #d9534f;
+    color: white;
+}
+
+table td button:hover {
+    background-color: #555;
+}
+.bt1{
+    width: 15%;
+    height: 35px;
+    background-color: #34cac2;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+.bt1:hover{
+    background-color: #fde5e5;
+    box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 25px 13px rgba(0, 0, 0, 0.75);
+    color: #000000;
+    border: solid 1px black;
+    border-radius: 25px;
+    transition: 0.9s;
+    
+}
+.bill{
+    text-align: end;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Lead Listing</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <td>Beel number</td>
+                    <td>pt</td>
+                    <td>Item Name</td>
+                    <td>Cut</td>
+                    <td>Qty</td>
+                    <td>Mtrs</td>
+                    <td>Rate</td>
+                    <td>Purose</td>
+                    <td>Remark</td>
+                    <td>Total</td>
+                    <td>Date</td>
+                    <td>Edit/Delete</td>
+
+                </tr>
+            </thead>
+
+            <tbody id="leadList">
+                <!-- Leads will be displayed here -->
+            </tbody>
+            
+        </table>
+    </div>
+
+    <div class="bill">
+    <a href="file:///C:/Users/Admin/OneDrive/Desktop/dhru/Gurukrupa%20Foundation/g1.html"><button class="bt1">BILL</button></a>
+    </div>
+    <script src="lead listing.js"></script>
+</body>
+</html>
